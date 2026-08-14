@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouToo Turkish Barber | Traditional Barbershop in Bramhope, Leeds</title>
+  <meta name="description" content="YouToo Turkish Barber, 11C Eastgate, Bramhope, Leeds. 4.9★ (42 reviews). Precise cuts, traditional wet shaves, hot towel treatments and complimentary Turkish coffee. Open 7 days." />
+  <link rel="canonical" href="https://youtooturkishbarber.netlify.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="business.business" />
+  <meta property="og:title" content="YouToo Turkish Barber | Bramhope, Leeds" />
+  <meta property="og:description" content="4.9★ (42 reviews) traditional Turkish barbershop in Bramhope. Precise cuts, wet shaves, hot towels, ear flaming and a complimentary Turkish coffee with every visit." />
+  <meta property="og:image" content="https://youtooturkishbarber.netlify.app/images/real-storefront.jpg" />
+  <meta property="og:url" content="https://youtooturkishbarber.netlify.app/" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:site_name" content="YouToo Turkish Barber" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="YouToo Turkish Barber | Bramhope, Leeds" />
+  <meta name="twitter:description" content="4.9★ (42 reviews) traditional Turkish barbershop in Bramhope, Leeds. Book your cut, shave or trim today." />
+  <meta name="twitter:image" content="https://youtooturkishbarber.netlify.app/images/real-storefront.jpg" />
+
+  <!-- Favicon: the real YouToo "Y" mark -->
+  <link rel="icon" type="image/png" href="images/logo-icon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Tailwind (CDN, no build step) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            // Literal hex values (not var()) so Tailwind's /opacity modifiers
+            // (e.g. text-cream/70, bg-charcoal/90) can decompose them into
+            // RGB channels — CSS custom properties can't be decomposed this
+            // way, which was silently dropping every opacity-modified class.
+            charcoal: '#141a20',
+            'charcoal-light': '#202832',
+            'charcoal-lighter': '#2d3947',
+            gold: '#d0a97c',
+            'gold-bright': '#dcbe9d',
+            'gold-deep': '#a28461',
+            cream: '#fff1e8'
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Lucide icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+  <script src="js/main.js" defer></script>
+
+  <!-- LocalBusiness structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "YouToo Turkish Barber",
+    "image": "https://youtooturkishbarber.netlify.app/images/real-storefront.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "11C Eastgate",
+      "addressLocality": "Bramhope, Leeds",
+      "postalCode": "LS16 9AT",
+      "addressCountry": "GB"
+    },
+    "telephone": "+44-7470-541538",
+    "url": "https://youtooturkishbarber.netlify.app/",
+    "priceRange": "££",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "42"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:30",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "10:30",
+        "closes": "16:00"
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-charcoal font-sans antialiased pb-16 md:pb-0">
+  <a href="#home" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-gold focus:text-charcoal focus:px-4 focus:py-2 focus:rounded-full focus:font-medium">Skip to content</a>
+
+  <!-- ============ MOCKUP NOTICE — delete this whole block before going live ============ -->
+  <div id="mockup-notice" class="sticky top-0 z-50 bg-gold-deep text-charcoal text-xs sm:text-sm px-4 py-2.5 flex items-center justify-center gap-2 text-center">
+    <i data-lucide="info" class="w-4 h-4 shrink-0" aria-hidden="true"></i>
+    <span><strong class="font-semibold">Preview only</strong> — the services and prices below are placeholders. Your real menu and pricing will be added once we get started.</span>
+    <button type="button" onclick="document.getElementById('mockup-notice').remove()" class="ml-1 shrink-0 hover:opacity-60 transition-opacity" aria-label="Dismiss preview notice">
+      <i data-lucide="x" class="w-4 h-4" aria-hidden="true"></i>
+    </button>
+  </div>
+  <!-- ============ END MOCKUP NOTICE ============ -->
+
+  <!-- ============ NAV ============ -->
+  <nav aria-label="Section navigation" id="site-nav" class="fixed bottom-0 inset-x-0 md:sticky md:bottom-auto z-40 bg-charcoal/90 backdrop-blur-md border-t md:border-t-0 md:border-b border-gold/15 pb-safe">
+    <div class="max-w-6xl mx-auto flex items-center justify-around md:justify-between px-2 md:px-6 py-1.5 md:py-3">
+      <a href="#home" class="hidden md:flex items-center gap-2.5 shrink-0">
+        <img src="images/logo-icon.png" alt="YouToo" class="h-8 w-auto" width="374" height="371" />
+        <span class="text-cream/70 text-sm tracking-wide">Turkish Barber</span>
+      </a>
+      <div class="flex items-center justify-around md:justify-end gap-0.5 md:gap-1 w-full md:w-auto no-scrollbar">
+        <a href="#home" class="nav-pill flex flex-col md:flex-row items-center gap-0.5 md:gap-1.5 px-3 py-1.5 md:px-4 md:py-2 rounded-full text-cream/70 text-[11px] md:text-sm font-medium" aria-current="true">
+          <i data-lucide="home" class="w-5 h-5 md:w-4 md:h-4" aria-hidden="true"></i>
+          <span>Home</span>
+        </a>
+        <a href="#services" class="nav-pill flex flex-col md:flex-row items-center gap-0.5 md:gap-1.5 px-3 py-1.5 md:px-4 md:py-2 rounded-full text-cream/70 text-[11px] md:text-sm font-medium" aria-current="false">
+          <i data-lucide="scissors" class="w-5 h-5 md:w-4 md:h-4" aria-hidden="true"></i>
+          <span>Services</span>
+        </a>
+        <a href="#gallery" class="nav-pill flex flex-col md:flex-row items-center gap-0.5 md:gap-1.5 px-3 py-1.5 md:px-4 md:py-2 rounded-full text-cream/70 text-[11px] md:text-sm font-medium" aria-current="false">
+          <i data-lucide="images" class="w-5 h-5 md:w-4 md:h-4" aria-hidden="true"></i>
+          <span>Gallery</span>
+        </a>
+        <a href="#reviews" class="nav-pill flex flex-col md:flex-row items-center gap-0.5 md:gap-1.5 px-3 py-1.5 md:px-4 md:py-2 rounded-full text-cream/70 text-[11px] md:text-sm font-medium" aria-current="false">
+          <i data-lucide="star" class="w-5 h-5 md:w-4 md:h-4" aria-hidden="true"></i>
+          <span>Reviews</span>
+        </a>
+        <a href="#location" class="nav-pill flex flex-col md:flex-row items-center gap-0.5 md:gap-1.5 px-3 py-1.5 md:px-4 md:py-2 rounded-full text-cream/70 text-[11px] md:text-sm font-medium" aria-current="false">
+          <i data-lucide="map-pin" class="w-5 h-5 md:w-4 md:h-4" aria-hidden="true"></i>
+          <span>Location</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ============ HOME / HERO ============ -->
+    <section id="home" class="relative overflow-hidden pt-14 pb-16 md:pt-24 md:pb-24 px-6">
+      <div class="dot-grid absolute -top-6 -right-6 w-56 h-56 opacity-[0.08] pointer-events-none" aria-hidden="true"></div>
+      <div class="stripe-motif absolute -bottom-20 -left-20 w-80 h-80 rounded-full opacity-[0.06] pointer-events-none" aria-hidden="true"></div>
+
+      <div class="relative max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+        <div>
+          <img src="images/logo-lockup.png" alt="YouToo Turkish Barber" class="reveal h-16 md:h-24 w-auto mb-8" width="482" height="511" />
+          <p class="reveal inline-flex items-center gap-2 border border-gold/40 rounded-full px-4 py-1.5 text-sm text-gold font-medium mb-6">
+            <i data-lucide="star" class="w-4 h-4" aria-hidden="true"></i> 4.9★ (42 Google reviews)
+          </p>
+          <h1 class="reveal font-display text-4xl sm:text-5xl font-bold leading-tight mb-4 text-cream">
+            Traditional Turkish Barbering, <span class="text-gold">Right Here in Bramhope</span>
+          </h1>
+          <p class="reveal text-cream/70 text-lg mb-8 max-w-md">
+            Precise cuts, hot towel shaves and a warm Turkish coffee — no need to head into Leeds.
+          </p>
+          <div class="reveal flex flex-wrap items-center gap-4 mb-8">
+            <a href="tel:+447470541538" class="btn-gold inline-flex items-center gap-2 bg-gold text-charcoal font-semibold px-6 py-3 rounded-full">
+              <i data-lucide="calendar-check" class="w-5 h-5" aria-hidden="true"></i> Book Now
+            </a>
+            <a href="#location" class="inline-flex items-center gap-2 border border-cream/30 text-cream px-6 py-3 rounded-full hover:border-gold hover:text-gold transition-colors">
+              Get Directions
+            </a>
+          </div>
+          <p class="reveal flex items-center gap-2 text-cream/60 text-sm">
+            <i data-lucide="clock" class="w-4 h-4 text-gold" aria-hidden="true"></i>
+            Mon&ndash;Sat 9:30am&ndash;6:00pm &middot; Sun 10:30am&ndash;4:00pm
+          </p>
+        </div>
+
+        <div class="reveal relative">
+          <div class="framed-photo rounded-2xl -rotate-1 max-w-xs sm:max-w-sm mx-auto">
+            <img src="images/real-interior.jpg" alt="Real photo of the inside of YouToo Turkish Barber, Bramhope" class="rounded-xl aspect-[4/5]" loading="eager" width="1200" height="1600" />
+          </div>
+          <div class="framed-photo rounded-xl absolute -bottom-6 -left-2 sm:-left-8 w-24 sm:w-28 md:w-32 rotate-3 block">
+            <img src="images/real-storefront.jpg" alt="Real photo of the YouToo Turkish Barber storefront signage" class="rounded-lg aspect-[3/4]" loading="eager" width="788" height="1400" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section id="services" class="py-20 md:py-28 px-6 bg-charcoal-light">
+      <div class="max-w-6xl mx-auto">
+        <div class="reveal text-center mb-12">
+          <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Services</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold text-cream">Crafted With Care, Every Time</h2>
+          <p class="text-cream/60 mt-3 max-w-xl mx-auto mb-6">Every visit includes a complimentary Turkish coffee or cold drink — sit back and enjoy.</p>
+          <div class="section-divider" aria-hidden="true">
+            <span class="divider-line"></span><span class="divider-dot"></span><span class="divider-line"></span>
+          </div>
+        </div>
+
+        <div class="reveal flex justify-center gap-2 mb-10 flex-wrap" role="tablist" aria-label="Service categories">
+          <button type="button" class="service-tab border-b-2 border-transparent text-cream/60 hover:text-gold px-4 py-2 text-sm md:text-base font-medium transition-colors" role="tab" aria-selected="true" aria-controls="panel-hair" id="tab-hair">Hair</button>
+          <button type="button" class="service-tab border-b-2 border-transparent text-cream/60 hover:text-gold px-4 py-2 text-sm md:text-base font-medium transition-colors" role="tab" aria-selected="false" aria-controls="panel-beard" id="tab-beard" tabindex="-1">Beard &amp; Shave</button>
+          <button type="button" class="service-tab border-b-2 border-transparent text-cream/60 hover:text-gold px-4 py-2 text-sm md:text-base font-medium transition-colors" role="tab" aria-selected="false" aria-controls="panel-extras" id="tab-extras" tabindex="-1">Extras</button>
+        </div>
+
+        <div id="panel-hair" class="service-panel flex flex-wrap justify-center gap-5" role="tabpanel" aria-labelledby="tab-hair">
+          <div class="reveal bg-charcoal rounded-2xl border border-gold/10 p-6 hover:border-gold/40 transition-colors w-full sm:basis-[calc(50%-10px)] lg:basis-[calc(33.333%-13.333px)] shrink-0">
+            <div class="w-10 h-10 rounded-full border border-gold/40 flex items-center justify-center mb-4"><i data-lucide="scissors" class="w-4 h-4 text-gold" aria-hidden="true"></i></div>
+            <div class="flex items-start justify-between gap-4 mb-2">
+              <h3 class="font-display text-lg font-semibold text-cream">Haircut</h3>
+              <span class="text-gold font-semibold">£18</span>
+            </div>
+            <p class="text-cream/60 text-sm">A precise, tailored cut finished with a style consultation.</p>
+          </div>
+          <div class="reveal bg-charcoal rounded-2xl border border-gold/10 p-6 hover:border-gold/40 transition-colors w-full sm:basis-[calc(50%-10px)] lg:basis-[calc(33.333%-13.333px)] shrink-0">
+            <div class="w-10 h-10 rounded-full border border-gold/40 flex items-center justify-center mb-4"><i data-lucide="scissors" class="w-4 h-4 text-gold" aria-hidden="true"></i></div>
+            <div class="flex items-start justify-between gap-4 mb-2">
+              <h3 class="font-display text-lg font-semibold text-cream">Skin Fade</h3>
+              <span class="text-gold font-semibold">£20</span>
+            </div>
+            <p class="text-cream/60 text-sm">Sharp, blended fade work down to the skin.</p>
+          </div>
+          <div class="reveal bg-charcoal rounded-2xl border border-gold/10 p-6 hover:border-gold/40 transition-colors w-full sm:basis-[calc(50%-10px)] lg:basis-[calc(33.333%-13.333px)] shrink-0">
+            <div class="w-10 h-10 rounded-full border border-gold/40 flex items-center justify-center mb-4"><i data-lucide="sparkles" class="w-4 h-4 text-gold" aria-hidden="true"></i></div>
+            <div class="flex items-start justify-between gap-4 mb-2">
+              <h3 class="font-display text-lg font-semibold text-cream">Kids Haircut</h3>
+              <span class="text-gold font-semibold">£14</span>
+            </div>
+            <p class="text-cream/60 text-sm">Patient, friendly cuts for under-12s.</p>
+          </div>
+          <div class="reveal bg-charcoal rounded-2xl border border-gold/10 p-6 hover:border-gold/40 transition-colors w-full sm:basis-[calc(50%-10px)] lg:basis-[calc(33.333%-13.333px)] shrink-0">
+            <div class="w-10 h-10 rounded-full border border-gold/40 flex items-center justify-center mb-4"><i data-lucide="layers" class="w-4 h-4 text-gold" aria-hidden="true"></i></div>
+            <div class="flex items-start justify-between gap-4 mb-2">
+              <h3 class="font-display text-lg font-semibold text-cream">Haircut &amp; Beard Combo</h3>
+              <span class="text-gold font-semibold">£30</span>
+            </div>
+            <p class="text-cream/60 text-sm">The full look, sorted in one sitting.</p>
+          </div>
+        </div>
+
+        <div id="panel-beard" class="service-panel flex flex-wrap justify-center gap-5" role="tabpanel" aria-labelledby="tab-beard" hidden>
+          <div class="reveal bg-charcoal rounded-2xl border border-gold/10 p-6 hover:border-gold/40 transition-colors w-full sm:basis-[calc(50%-10px)] lg:basis-[calc(33.333%-13.333px)] shrink-0">
+            <div class="w-10 h-10 rounded-full border border-gold/40 flex items-center justify-center mb-4"><i data-lucide="scissors" class="w-4 h-4 text-gold" aria-hidden="true"></i></div>
+            <div class="flex items-start justify-between gap-4 mb-2">
+              <h3 class="font-display text-lg font-semibold text-cream">Beard Trim</h3>
+              <span class="text-gold font-semibold">£10</span>
+            </div>
+            <p class="text-cream/60 text-sm">Shaped and tidied to suit your face.</p>
+          </div>
+          <div class="reveal bg-charcoal rounded-2xl border border-gold/10 p-6 hover:border-gold/40 transition-colors w-full sm:basis-[calc(50%-10px)] lg:basis-[calc(33.333%-13.333px)] shrink-0">
+            <div class="w-10 h-10 rounded-full border border-gold/40 flex items-center justify-center mb-4"><i data-lucide="droplet" class="w-4 h-4 text-gold" aria-hidden="true"></i></div>
+            <div class="flex items-start justify-between gap-4 mb-2">
+              <h3 class="font-display text-lg font-semibold text-cream">Traditional Wet Shave</h3>
+              <span class="text-gold font-semibold">£18</span>
+            </div>
+            <p class="text-cream/60 text-sm">A classic straight-razor shave, hot towel included.</p>
+          </div>
+          <div class="reveal bg-charcoal rounded-2xl border border-gold/10 p-6 hover:border-gold/40 transition-colors w-full sm:basis-[calc(50%-10px)] lg:basis-[calc(33.333%-13.333px)] shrink-0">
+            <div class="w-10 h-10 rounded-full border border-gold/40 flex items-center justify-center mb-4"><i data-lucide="droplets" class="w-4 h-4 text-gold" aria-hidden="true"></i></div>
+            <div class="flex items-start justify-between gap-4 mb-2">
+              <h3 class="font-display text-lg font-semibold text-cream">Hot Towel Treatment</h3>
+              <span class="text-gold font-semibold">£8</span>
+            </div>
+            <p class="text-cream/60 text-sm">Steamed towels to soften skin and open pores.</p>
+          </div>
+          <div class="reveal bg-charcoal rounded-2xl border border-gold/10 p-6 hover:border-gold/40 transition-colors w-full sm:basis-[calc(50%-10px)] lg:basis-[calc(33.333%-13.333px)] shrink-0">
+            <div class="w-10 h-10 rounded-full border border-gold/40 flex items-center justify-center mb-4"><i data-lucide="flame" class="w-4 h-4 text-gold" aria-hidden="true"></i></div>
+            <div class="flex items-start justify-between gap-4 mb-2">
+              <h3 class="font-display text-lg font-semibold text-cream">Ear Flaming</h3>
+              <span class="text-gold font-semibold">£6</span>
+            </div>
+            <p class="text-cream/60 text-sm">The traditional Turkish finishing touch.</p>
+          </div>
+          <div class="reveal bg-charcoal rounded-2xl border border-gold/10 p-6 hover:border-gold/40 transition-colors w-full sm:basis-[calc(50%-10px)] lg:basis-[calc(33.333%-13.333px)] shrink-0">
+            <div class="w-10 h-10 rounded-full border border-gold/40 flex items-center justify-center mb-4"><i data-lucide="layers" class="w-4 h-4 text-gold" aria-hidden="true"></i></div>
+            <div class="flex items-start justify-between gap-4 mb-2">
+              <h3 class="font-display text-lg font-semibold text-cream">Beard Trim &amp; Wet Shave</h3>
+              <span class="text-gold font-semibold">£24</span>
+            </div>
+            <p class="text-cream/60 text-sm">Trim, shave and hot towel together.</p>
+          </div>
+        </div>
+
+        <div id="panel-extras" class="service-panel flex flex-wrap justify-center gap-5" role="tabpanel" aria-labelledby="tab-extras" hidden>
+          <div class="reveal bg-charcoal rounded-2xl border border-gold/40 p-6 w-full sm:basis-[calc(50%-10px)] lg:basis-[calc(33.333%-13.333px)] shrink-0">
+            <div class="w-10 h-10 rounded-full border border-gold/40 flex items-center justify-center mb-4"><i data-lucide="coffee" class="w-4 h-4 text-gold" aria-hidden="true"></i></div>
+            <div class="flex items-start justify-between gap-4 mb-2">
+              <h3 class="font-display text-lg font-semibold text-cream">Turkish Coffee</h3>
+              <span class="text-gold font-semibold">Free</span>
+            </div>
+            <p class="text-cream/60 text-sm">Complimentary with every single visit.</p>
+          </div>
+          <div class="reveal bg-charcoal rounded-2xl border border-gold/10 p-6 hover:border-gold/40 transition-colors w-full sm:basis-[calc(50%-10px)] lg:basis-[calc(33.333%-13.333px)] shrink-0">
+            <div class="w-10 h-10 rounded-full border border-gold/40 flex items-center justify-center mb-4"><i data-lucide="eye" class="w-4 h-4 text-gold" aria-hidden="true"></i></div>
+            <div class="flex items-start justify-between gap-4 mb-2">
+              <h3 class="font-display text-lg font-semibold text-cream">Eyebrow Threading</h3>
+              <span class="text-gold font-semibold">£6</span>
+            </div>
+            <p class="text-cream/60 text-sm">Neat, defined brows.</p>
+          </div>
+          <div class="reveal bg-charcoal rounded-2xl border border-gold/10 p-6 hover:border-gold/40 transition-colors w-full sm:basis-[calc(50%-10px)] lg:basis-[calc(33.333%-13.333px)] shrink-0">
+            <div class="w-10 h-10 rounded-full border border-gold/40 flex items-center justify-center mb-4"><i data-lucide="sparkles" class="w-4 h-4 text-gold" aria-hidden="true"></i></div>
+            <div class="flex items-start justify-between gap-4 mb-2">
+              <h3 class="font-display text-lg font-semibold text-cream">Nose Wax</h3>
+              <span class="text-gold font-semibold">£5</span>
+            </div>
+            <p class="text-cream/60 text-sm">Quick and comfortable.</p>
+          </div>
+          <div class="reveal bg-charcoal rounded-2xl border border-gold/10 p-6 hover:border-gold/40 transition-colors w-full sm:basis-[calc(50%-10px)] lg:basis-[calc(33.333%-13.333px)] shrink-0">
+            <div class="w-10 h-10 rounded-full border border-gold/40 flex items-center justify-center mb-4"><i data-lucide="droplets" class="w-4 h-4 text-gold" aria-hidden="true"></i></div>
+            <div class="flex items-start justify-between gap-4 mb-2">
+              <h3 class="font-display text-lg font-semibold text-cream">Hair Wash &amp; Style</h3>
+              <span class="text-gold font-semibold">£6</span>
+            </div>
+            <p class="text-cream/60 text-sm">Finished off just how you like it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section id="gallery" class="py-20 md:py-28 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="reveal text-center mb-4">
+          <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Gallery</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold text-cream">Inside the Shop</h2>
+        </div>
+        <div class="section-divider reveal mb-12" aria-hidden="true">
+          <span class="divider-line"></span><span class="divider-dot"></span><span class="divider-line"></span>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 md:auto-rows-[220px] lg:auto-rows-[260px]">
+          <button type="button" class="gallery-thumb reveal relative overflow-hidden rounded-xl group focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold aspect-[3/4] md:aspect-auto md:row-span-2">
+            <img src="images/real-storefront.jpg" data-full="images/real-storefront.jpg" alt="The YouToo Turkish Barber storefront in Bramhope" loading="lazy" class="w-full h-full object-cover" />
+            <span class="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-colors"></span>
+            <i data-lucide="zoom-in" class="absolute bottom-2 right-2 w-5 h-5 text-cream opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"></i>
+          </button>
+          <button type="button" class="gallery-thumb reveal relative overflow-hidden rounded-xl group focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold aspect-[3/4] md:aspect-auto md:row-span-2">
+            <img src="images/real-interior.jpg" data-full="images/real-interior.jpg" alt="Inside YouToo Turkish Barber" loading="lazy" class="w-full h-full object-cover" />
+            <span class="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-colors"></span>
+            <i data-lucide="zoom-in" class="absolute bottom-2 right-2 w-5 h-5 text-cream opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"></i>
+          </button>
+          <button type="button" class="gallery-thumb reveal relative overflow-hidden rounded-xl group focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold aspect-square md:aspect-auto">
+            <img src="images/real-haircut-back-detail.jpg" data-full="images/real-haircut-back-detail.jpg" alt="A finished fade, cut at YouToo Turkish Barber" loading="lazy" class="w-full h-full object-cover" />
+            <span class="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-colors"></span>
+            <i data-lucide="zoom-in" class="absolute bottom-2 right-2 w-5 h-5 text-cream opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"></i>
+          </button>
+          <button type="button" class="gallery-thumb reveal relative overflow-hidden rounded-xl group focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold aspect-square md:aspect-auto">
+            <img src="images/real-haircut-fade-detail.jpg" data-full="images/real-haircut-fade-detail.jpg" alt="A fade haircut detail, cut at YouToo Turkish Barber" loading="lazy" class="w-full h-full object-cover" />
+            <span class="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-colors"></span>
+            <i data-lucide="zoom-in" class="absolute bottom-2 right-2 w-5 h-5 text-cream opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section id="reviews" class="py-20 md:py-28 px-6 bg-charcoal-light">
+      <div class="max-w-6xl mx-auto">
+        <div class="reveal text-center mb-12">
+          <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Reviews</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold text-cream mb-8">Loved by Bramhope &amp; Beyond</h2>
+
+          <!-- Circular badge, echoing the logo's ringed "GROOMING" arc-text motif -->
+          <svg viewBox="0 0 200 200" class="badge-ring mx-auto" role="img" aria-label="4.9 out of 5 stars from 42 Google reviews">
+            <circle cx="100" cy="100" r="94" fill="none" stroke="var(--gold)" stroke-width="1" stroke-dasharray="1.5 7" opacity="0.7" />
+            <circle cx="100" cy="100" r="80" fill="none" stroke="var(--gold)" stroke-width="1" opacity="0.35" />
+            <path id="badgeArcTop" d="M 28,102 A 72,72 0 0 1 172,102" fill="none" />
+            <text font-size="10.5" letter-spacing="3" fill="var(--gold)" font-weight="600">
+              <textPath href="#badgeArcTop" startOffset="50%" text-anchor="middle">GOOGLE REVIEWS</textPath>
+            </text>
+            <text x="100" y="96" text-anchor="middle" font-family="'Playfair Display', serif" font-size="36" font-weight="700" fill="var(--cream)">4.9</text>
+            <text x="100" y="120" text-anchor="middle" font-size="13" letter-spacing="2" fill="var(--gold)">★★★★★</text>
+            <path id="badgeArcBottom" d="M 40,128 A 60,60 0 0 0 160,128" fill="none" />
+            <text font-size="9.5" letter-spacing="2" fill="var(--cream)" opacity="0.55">
+              <textPath href="#badgeArcBottom" startOffset="50%" text-anchor="middle">42 REVIEWS</textPath>
+            </text>
+          </svg>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+          <figure class="reveal bg-charcoal rounded-2xl border border-gold/10 p-6 relative">
+            <span class="quote-mark absolute top-2 right-5 text-6xl" aria-hidden="true">&rdquo;</span>
+            <div class="star-row text-sm mb-3" aria-hidden="true">★★★★★</div>
+            <blockquote class="text-cream/80 text-sm leading-relaxed mb-4">Ear flaming. Hot towel. Massage. Always excellent service.</blockquote>
+            <figcaption class="text-cream/50 text-xs font-medium">&mdash; Kev Lee, Google review</figcaption>
+          </figure>
+          <figure class="reveal bg-charcoal rounded-2xl border border-gold/10 p-6 relative">
+            <span class="quote-mark absolute top-2 right-5 text-6xl" aria-hidden="true">&rdquo;</span>
+            <div class="star-row text-sm mb-3" aria-hidden="true">★★★★★</div>
+            <blockquote class="text-cream/80 text-sm leading-relaxed mb-4">Great Barbers, I have been attending for the last year and very pleased every time I attend. Complimentary Turkish coffee is provided or cold drink if you prefer. Haircut quality is great, and I also get a wet shave with straight cut razor and beard trim which comes with a hot towel and a spray of aftershave to finish off. Overall I like the experience and the location is in a quiet location which is also local to me. Highly recommended.</blockquote>
+            <figcaption class="text-cream/50 text-xs font-medium">&mdash; Hashim, Google review</figcaption>
+          </figure>
+          <figure class="reveal bg-charcoal rounded-2xl border border-gold/10 p-6 relative">
+            <span class="quote-mark absolute top-2 right-5 text-6xl" aria-hidden="true">&rdquo;</span>
+            <div class="star-row text-sm mb-3" aria-hidden="true">★★★★★</div>
+            <blockquote class="text-cream/80 text-sm leading-relaxed mb-4">Very happy with my experience. The shop is so clean. I got a nice lemonade. And Yunis gave me a great haircut and beard trim (with an old fashioned blade). He also flamed away all the little hairs on my ear lobes! My hair has grown out to a perfect shape and I'm very happy. As someone who has lived in Bramhope all my life I'm happy that we have Yunis here (and he's open on a Sunday too).</blockquote>
+            <figcaption class="text-cream/50 text-xs font-medium">&mdash; Shaleel Kesavan, Google review</figcaption>
+          </figure>
+          <figure class="reveal bg-charcoal rounded-2xl border border-gold/10 p-6 relative">
+            <span class="quote-mark absolute top-2 right-5 text-6xl" aria-hidden="true">&rdquo;</span>
+            <div class="star-row text-sm mb-3" aria-hidden="true">★★★★★</div>
+            <blockquote class="text-cream/80 text-sm leading-relaxed mb-4">An absolute 10/10! I have been going into Leeds to have my hair cut for 7 years but YouToo has changed all of that. I visited to see what it was like and was amazed, absolutely fantastic experience. I will recommend to everyone, very very impressed!</blockquote>
+            <figcaption class="text-cream/50 text-xs font-medium">&mdash; Oliver Bedford, Google review</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LOCATION ============ -->
+    <section id="location" class="py-20 md:py-28 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="reveal text-center mb-4">
+          <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Location</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold text-cream">Find Us in Bramhope</h2>
+        </div>
+        <div class="section-divider reveal mb-12" aria-hidden="true">
+          <span class="divider-line"></span><span class="divider-dot"></span><span class="divider-line"></span>
+        </div>
+        <div class="grid md:grid-cols-[0.9fr_1.3fr_1.2fr] gap-6 items-stretch">
+          <div class="framed-photo reveal rounded-2xl -rotate-1 hidden md:block">
+            <img src="images/real-storefront.jpg" alt="Real photo of the YouToo Turkish Barber storefront, 11C Eastgate, Bramhope" class="rounded-xl h-full" loading="lazy" />
+          </div>
+          <div class="reveal rounded-2xl overflow-hidden border border-gold/10 min-h-[320px]">
+            <iframe
+              title="Map showing YouToo Turkish Barber at 11C Eastgate, Bramhope, Leeds"
+              src="https://maps.google.com/maps?q=11C+Eastgate,+Bramhope,+Leeds,+LS16+9AT,+UK&output=embed"
+              class="w-full h-full min-h-[320px]"
+              style="border:0"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="reveal space-y-6">
+            <div>
+              <h3 class="font-display text-xl font-semibold text-cream mb-2 flex items-center gap-2">
+                <i data-lucide="map-pin" class="w-5 h-5 text-gold" aria-hidden="true"></i> Address
+              </h3>
+              <p class="text-cream/70">11C Eastgate, Bramhope, Leeds, LS16 9AT</p>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=11C+Eastgate,+Bramhope,+Leeds,+LS16+9AT,+UK" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-gold text-sm font-medium mt-2 hover:underline">
+                Get Directions <i data-lucide="arrow-up-right" class="w-4 h-4" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div>
+              <h3 class="font-display text-xl font-semibold text-cream mb-3 flex items-center gap-2">
+                <i data-lucide="clock" class="w-5 h-5 text-gold" aria-hidden="true"></i> Opening Hours
+              </h3>
+              <table class="w-full text-sm text-cream/70">
+                <caption class="sr-only">Opening hours for YouToo Turkish Barber</caption>
+                <tbody>
+                  <tr class="border-b border-gold/10">
+                    <th scope="row" class="text-left font-normal py-2">Monday &ndash; Saturday</th>
+                    <td class="text-right py-2">9:30am &ndash; 6:00pm</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-left font-normal py-2">Sunday</th>
+                    <td class="text-right py-2">10:30am &ndash; 4:00pm</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <h3 class="font-display text-xl font-semibold text-cream mb-2 flex items-center gap-2">
+                <i data-lucide="phone" class="w-5 h-5 text-gold" aria-hidden="true"></i> Phone
+              </h3>
+              <a href="tel:+447470541538" class="text-cream/70 hover:text-gold transition-colors">07470 541538</a>
+            </div>
+            <div class="flex flex-wrap gap-3 pt-2">
+              <a href="tel:+447470541538" class="btn-gold inline-flex items-center gap-2 bg-gold text-charcoal font-semibold px-6 py-3 rounded-full">
+                <i data-lucide="phone" class="w-5 h-5" aria-hidden="true"></i> Call to Book
+              </a>
+              <a href="#home" class="inline-flex items-center gap-2 border border-gold/40 text-gold px-6 py-3 rounded-full hover:bg-gold/10 transition-colors">
+                Book Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section id="faq" class="py-20 md:py-28 px-6 bg-charcoal-light">
+      <div class="max-w-3xl mx-auto">
+        <div class="reveal text-center mb-12">
+          <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">FAQ</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold text-cream mb-6">Good to Know</h2>
+          <div class="section-divider" aria-hidden="true">
+            <span class="divider-line"></span><span class="divider-dot"></span><span class="divider-line"></span>
+          </div>
+        </div>
+        <div class="reveal space-y-3">
+          <div class="accordion-item border border-gold/10 rounded-xl bg-charcoal overflow-hidden" data-open="false">
+            <h3>
+              <button type="button" class="accordion-trigger w-full flex items-center justify-between gap-4 px-5 py-4 text-left text-cream font-medium" aria-expanded="false" aria-controls="faq-panel-1" id="faq-trigger-1">
+                <span>Do I need to book an appointment?</span>
+                <i data-lucide="chevron-down" class="accordion-icon w-5 h-5 text-gold shrink-0" aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faq-panel-1" role="region" aria-labelledby="faq-trigger-1">
+              <div class="px-5 pb-4 text-cream/70 text-sm leading-relaxed">Walk-ins are always welcome, but booking ahead &mdash; especially on Saturdays &mdash; means less waiting around.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item border border-gold/10 rounded-xl bg-charcoal overflow-hidden" data-open="false">
+            <h3>
+              <button type="button" class="accordion-trigger w-full flex items-center justify-between gap-4 px-5 py-4 text-left text-cream font-medium" aria-expanded="false" aria-controls="faq-panel-2" id="faq-trigger-2">
+                <span>What's included in a standard haircut?</span>
+                <i data-lucide="chevron-down" class="accordion-icon w-5 h-5 text-gold shrink-0" aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faq-panel-2" role="region" aria-labelledby="faq-trigger-2">
+              <div class="px-5 pb-4 text-cream/70 text-sm leading-relaxed">A consultation, a precise cut tailored to you, styling, and a complimentary Turkish coffee or cold drink while you wait.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item border border-gold/10 rounded-xl bg-charcoal overflow-hidden" data-open="false">
+            <h3>
+              <button type="button" class="accordion-trigger w-full flex items-center justify-between gap-4 px-5 py-4 text-left text-cream font-medium" aria-expanded="false" aria-controls="faq-panel-3" id="faq-trigger-3">
+                <span>Are you open on Sundays?</span>
+                <i data-lucide="chevron-down" class="accordion-icon w-5 h-5 text-gold shrink-0" aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faq-panel-3" role="region" aria-labelledby="faq-trigger-3">
+              <div class="px-5 pb-4 text-cream/70 text-sm leading-relaxed">Yes &mdash; we're open Sunday 10:30am&ndash;4:00pm, alongside Monday to Saturday 9:30am&ndash;6:00pm.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item border border-gold/10 rounded-xl bg-charcoal overflow-hidden" data-open="false">
+            <h3>
+              <button type="button" class="accordion-trigger w-full flex items-center justify-between gap-4 px-5 py-4 text-left text-cream font-medium" aria-expanded="false" aria-controls="faq-panel-4" id="faq-trigger-4">
+                <span>What exactly is "ear flaming"?</span>
+                <i data-lucide="chevron-down" class="accordion-icon w-5 h-5 text-gold shrink-0" aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faq-panel-4" role="region" aria-labelledby="faq-trigger-4">
+              <div class="px-5 pb-4 text-cream/70 text-sm leading-relaxed">A traditional Turkish technique that briefly singes away fine ear and facial hair with a controlled flame &mdash; quick, safe, and a real crowd-pleaser.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item border border-gold/10 rounded-xl bg-charcoal overflow-hidden" data-open="false">
+            <h3>
+              <button type="button" class="accordion-trigger w-full flex items-center justify-between gap-4 px-5 py-4 text-left text-cream font-medium" aria-expanded="false" aria-controls="faq-panel-5" id="faq-trigger-5">
+                <span>Is there parking nearby?</span>
+                <i data-lucide="chevron-down" class="accordion-icon w-5 h-5 text-gold shrink-0" aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faq-panel-5" role="region" aria-labelledby="faq-trigger-5">
+              <div class="px-5 pb-4 text-cream/70 text-sm leading-relaxed">Yes, Eastgate has convenient on-street and nearby parking &mdash; just a short walk to the shop.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item border border-gold/10 rounded-xl bg-charcoal overflow-hidden" data-open="false">
+            <h3>
+              <button type="button" class="accordion-trigger w-full flex items-center justify-between gap-4 px-5 py-4 text-left text-cream font-medium" aria-expanded="false" aria-controls="faq-panel-6" id="faq-trigger-6">
+                <span>Do you do kids' haircuts?</span>
+                <i data-lucide="chevron-down" class="accordion-icon w-5 h-5 text-gold shrink-0" aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faq-panel-6" role="region" aria-labelledby="faq-trigger-6">
+              <div class="px-5 pb-4 text-cream/70 text-sm leading-relaxed">Absolutely &mdash; we welcome under-12s with patient, friendly cuts at a family-friendly price.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="px-6 py-12 text-center text-cream/40 text-sm border-t border-gold/10">
+    <img src="images/logo-lockup.png" alt="YouToo Turkish Barber" class="h-16 w-auto mx-auto mb-4" width="482" height="511" />
+    <p>11C Eastgate, Bramhope, Leeds, LS16 9AT</p>
+    <p class="mt-4">&copy; <span id="year"></span> YouToo Turkish Barber. All rights reserved.</p>
+  </footer>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div id="lightbox" class="hidden fixed inset-0 z-50 items-center justify-center bg-charcoal/95 backdrop-blur-sm p-4" data-open="false" role="dialog" aria-modal="true" aria-label="Enlarged gallery image">
+    <button id="lightbox-close" type="button" class="absolute top-4 right-4 md:top-6 md:right-6 text-cream hover:text-gold p-2" aria-label="Close image">
+      <i data-lucide="x" class="w-7 h-7" aria-hidden="true"></i>
+    </button>
+    <figure class="max-w-4xl max-h-[85vh] flex flex-col items-center">
+      <img id="lightbox-img" src="" alt="" class="max-w-full max-h-[75vh] object-contain rounded-lg" />
+      <figcaption id="lightbox-caption" class="text-cream/60 text-sm mt-3 text-center"></figcaption>
+    </figure>
+  </div>
+</body>
+</html>

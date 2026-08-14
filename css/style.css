@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Palette extracted from the YouToo logo (03-youtoo-logo.png) */
+  --charcoal: #141a20;       /* darkened logo navy — page background */
+  --charcoal-light: #202832; /* section background */
+  --charcoal-lighter: #2d3947; /* exact logo navy — cards, borders, badges */
+  --gold: #d0a97c;      /* exact logo gold */
+  --gold-bright: #dcbe9d; /* lightened gold — hover states */
+  --gold-deep: #a28461;  /* deepened gold — text on light surfaces */
+  --cream: #fff1e8;      /* exact logo background cream */
+  --banner-height: 0px;  /* set by JS to the mockup notice's rendered height, 0 once dismissed */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-color: var(--charcoal);
+  color: var(--cream);
+  font-family: 'Inter', sans-serif;
+}
+
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Baseline heading typography, independent of Tailwind's CDN utilities loading
+   successfully — headings should never fall back to browser-default black serif. */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--cream);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.75rem;
+  }
+  h2 {
+    font-size: 2.75rem;
+  }
+}
+
+/* FAQ questions are wrapped in <h3> for a11y/SEO structure, but should read as
+   body copy, not a display heading — override the h3 baseline above. */
+.accordion-trigger {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* section scroll offset so the sticky top bar doesn't cover headings —
+   grows to also clear the mockup notice banner while it's visible */
+section[id] {
+  scroll-margin-top: calc(5.5rem + var(--banner-height));
+}
+
+/* Desktop sticky nav docks directly under the sticky banner (mobile nav is
+   fixed to the bottom instead, so it's untouched by banner height). */
+@media (min-width: 768px) {
+  #site-nav {
+    top: var(--banner-height);
+    transition: top 200ms ease;
+  }
+}
+
+/* Visible, high-contrast focus ring for keyboard users */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Nav pill underline / active state */
+.nav-pill {
+  position: relative;
+  transition: color 250ms ease, background-color 250ms ease;
+}
+
+.nav-pill[aria-current="true"] {
+  color: var(--charcoal);
+  background-color: var(--gold);
+}
+
+/* Entrance animation: elements start hidden, JS adds .in-view on intersect */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Star rating */
+.star-row {
+  color: var(--gold);
+  letter-spacing: 0.1em;
+}
+
+/* Quote mark accent on review cards */
+.quote-mark {
+  font-family: 'Playfair Display', serif;
+  color: var(--gold);
+  opacity: 0.35;
+  line-height: 1;
+}
+
+/* Lightbox */
+#lightbox {
+  transition: opacity 250ms ease;
+}
+
+#lightbox[data-open="true"] {
+  display: flex;
+}
+
+#lightbox img {
+  transition: transform 300ms ease;
+}
+
+/* Accordion panel animation */
+.accordion-panel {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 300ms ease;
+}
+
+.accordion-item[data-open="true"] .accordion-panel {
+  max-height: 20rem;
+}
+
+.accordion-icon {
+  transition: transform 300ms ease;
+}
+
+.accordion-item[data-open="true"] .accordion-icon {
+  transform: rotate(180deg);
+}
+
+/* Gallery thumb hover/focus zoom */
+.gallery-thumb img {
+  transition: transform 400ms ease;
+}
+
+.gallery-thumb:hover img,
+.gallery-thumb:focus-visible img {
+  transform: scale(1.06);
+}
+
+/* Button micro-interaction */
+.btn-gold {
+  transition: transform 150ms ease, box-shadow 150ms ease, background-color 150ms ease;
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px -8px rgba(208, 169, 124, 0.5);
+}
+
+.btn-gold:active {
+  transform: translateY(0);
+}
+
+/* Service category toggle */
+.service-tab[aria-selected="true"] {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
+/* Tailwind's `.service-panel { display: grid }` utility has equal specificity
+   to the browser's default [hidden] rule and loads later, so it was winning —
+   every panel rendered at once, stacked, instead of only the active one.
+   This selector's higher specificity forces hidden panels to actually hide. */
+.service-panel[hidden] {
+  display: none;
+}
+
+/* Scrollbar hide for mobile nav if it overflows */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Safe-area padding for bottom nav on notched phones */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
+
+/* ============ Graphic design system (logo-derived) ============ */
+
+/* Decorative diagonal stripe motif, echoing the three gold strokes in the logo's "Y" */
+.stripe-motif {
+  background-image: repeating-linear-gradient(
+    115deg,
+    var(--gold) 0px,
+    var(--gold) 3px,
+    transparent 3px,
+    transparent 22px
+  );
+}
+
+/* Dot-grid motif, echoing the logo's graph-paper backdrop */
+.dot-grid {
+  background-image: radial-gradient(circle, var(--gold) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Section divider: line — dot — line, echoing the logo's circular badge */
+.section-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 12rem;
+  margin: 0 auto;
+}
+
+.section-divider .divider-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity: 0.6;
+}
+
+.section-divider .divider-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  border: 1px solid var(--gold);
+  flex-shrink: 0;
+}
+
+/* Framed real photo: gold hairline border, slight tilt for a "supporting evidence" feel */
+.framed-photo {
+  border: 1px solid var(--gold);
+  padding: 10px;
+  background: var(--charcoal-lighter);
+  box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.6);
+}
+
+.framed-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Badge ring SVG: fixed sizing helpers */
+.badge-ring {
+  width: 9rem;
+  height: 9rem;
+}
+
+@media (min-width: 768px) {
+  .badge-ring {
+    width: 11rem;
+    height: 11rem;
+  }
+}
